@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- 상단 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/route_map_title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#202936" />
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/symbol_home"
+            android:textSize="26sp"
+            android:textColor="#2163C5" />
+    </LinearLayout>
+
+    <!-- 선택한 버스 정보, 지도, 승하차 정류장을 보여주는 본문 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="#F4F5F8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRouteTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sample_route_title"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#202936" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRouteSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/sample_route_summary"
+                android:textSize="14sp"
+                android:textColor="#657080" />
+
+
+            <!-- RouteActivity가 TMapView와 선택 구간을 동적으로 추가하는 영역 -->
+            <FrameLayout
+                android:id="@+id/mapContainer"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#F4F5F8" />
+
+
+            <!-- 선택한 승차 정류장과 하차 정류장 표시 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card">
+
+                <TextView
+                    android:id="@+id/txtStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_boarding_stop"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#2163C5" />
+
+                <TextView
+                    android:id="@+id/txtEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/sample_alighting_stop"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#C65A47" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 하차 정류장 선택 화면을 여는 버튼 -->
+    <Button
+        android:id="@+id/btnSelectStop"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_alighting_stop"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:backgroundTint="#2163C5" />
+
+    <!-- 홈, 경로, 예약, 내 정보 화면으로 이동하는 하단 메뉴 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_home"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+
+        <TextView
+            android:id="@+id/navRoute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_route"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565C0" />
+
+        <TextView
+            android:id="@+id/navBooking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_booking"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_profile"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F5F7">
+
+    <!-- 상단 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nearby_map_title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#202936" />
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/symbol_home"
+            android:textSize="30sp"
+            android:textColor="#2465C6" />
+
+    </LinearLayout>
+
+    <!-- NearbyMapActivity가 TMapView를 동적으로 추가하는 지도 영역 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp"
+        android:background="#E9ECEF">
+
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 현재 위치 버튼 -->
+        <TextView
+            android:id="@+id/btnMyLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/symbol_current_location"
+            android:textSize="30sp"
+            android:textColor="#202936"
+            android:background="@drawable/bg_location_button"
+            android:elevation="5dp" />
+
+    </FrameLayout>
+
+    <!-- 홈, 경로, 예약, 내 정보 화면으로 이동하는 하단 메뉴 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_home"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0" />
+
+        <TextView
+            android:id="@+id/navRoute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_route"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+
+        <TextView
+            android:id="@+id/navReservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_booking"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_profile"
+            android:textSize="15sp"
+            android:textColor="#475467" />
+
+    </LinearLayout>
+
+</LinearLayout>

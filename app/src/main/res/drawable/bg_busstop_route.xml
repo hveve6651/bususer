@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 노선 버튼의 파란색 배경 -->
+    <solid android:color="#205DBD" />
+
+    <!-- 버튼 모서리를 둥글게 표시 -->
+    <corners android:radius="9dp" />
+</shape>

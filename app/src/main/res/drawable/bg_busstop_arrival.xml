@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 도착 정보 카드의 연한 파란색 배경 -->
+    <solid android:color="#EAF1FF" />
+
+    <!-- 카드 모서리를 둥글게 표시 -->
+    <corners android:radius="10dp" />
+</shape>

@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">BUSUSER</string>
+
+    <!-- 공통 아이콘 및 하단 메뉴 -->
+    <string name="symbol_back">‹</string>
+    <string name="symbol_home">⌂</string>
+    <string name="symbol_location">⌖</string>
+    <string name="symbol_search">⌕</string>
+    <string name="symbol_arrow_right">→</string>
+    <string name="symbol_stop">▣</string>
+    <string name="symbol_current_location">⊙</string>
+    <string name="nav_home">⌂\n홈</string>
+    <string name="nav_route">↪\n경로</string>
+    <string name="nav_booking">♧\n예약</string>
+    <string name="nav_profile">♙\n내 정보</string>
+
+    <!-- 예약 화면 -->
+    <string name="reservation_title">예약</string>
+    <string name="reservation_empty_symbol">♧</string>
+    <string name="reservation_empty_title">예약 내역이 없습니다</string>
+    <string name="reservation_empty_description">경로 화면에서 버스와 하차 정류장을 선택해 주세요.</string>
+
+    <!-- 홈 화면 -->
+    <string name="sample_current_location">진주시 중앙동</string>
+    <string name="main_search_hint">버스 번호 · 정류장 검색</string>
+    <string name="find_destination_route">↪  도착지로 경로 찾기</string>
+    <string name="nearby_stops_title">가까운 정류장</string>
+    <string name="nearby_stops_loading">주변 정류장을 불러오는 중…</string>
+    <string name="nearby_stops_map">⌖  주변 정류장 지도</string>
+    <string name="expand">펼쳐보기  ›</string>
+
+    <!-- 정류장 및 노선 화면 -->
+    <string name="bus_route_detail_title">버스 노선 상세</string>
+    <string name="sample_bus_number">130번</string>
+    <string name="jinju_city_bus">진주시 시내버스</string>
+    <string name="full_route_title">전체 운행 노선</string>
+    <string name="route_info_loading">노선 정보를 불러오는 중…</string>
+    <string name="stop_info_title">정류장 정보</string>
+    <string name="sample_stop_name">중앙시장 정류장</string>
+    <string name="sample_walking_distance">도보 3분 · 120m</string>
+    <string name="bus_arrivals_loading">버스 도착 정보를 불러오는 중…</string>
+    <string name="find_route_with_bus">이 버스로 경로 찾기</string>
+
+    <!-- 경로 화면 -->
+    <string name="route_map_title">운행 경로 지도</string>
+    <string name="sample_route_title">150번 운행 경로</string>
+    <string name="sample_route_summary">공영차고지 승차 · --- 하차</string>
+    <string name="sample_boarding_stop">●  승차  ---</string>
+    <string name="sample_alighting_stop">●  하차  ---</string>
+    <string name="select_alighting_stop">하차 정류장 선택하기</string>
+
+    <!-- 검색 화면 -->
+    <string name="bus_search_title">버스 검색</string>
+    <string name="bus_search_hint">버스 번호 또는 정류장 검색</string>
+    <string name="filter_all">전체</string>
+    <string name="filter_bus">버스</string>
+    <string name="filter_stop">정류장</string>
+    <string name="enter_search_term">검색어를 입력하세요</string>
+
+    <!-- 하차 정류장 선택 화면 -->
+    <string name="select_stop_title">하차 정류장 선택</string>
+    <string name="sample_selected_route">150번 · 경상국립대학교 방면</string>
+    <string name="where_to_alight">어디에서 내리시나요?</string>
+    <string name="sample_boarding_description">공영차고지에서 승차한 뒤 내릴 정류장을 선택해 주세요.</string>
+    <string name="boarding_stop_label">승차 정류장</string>
+    <string name="sample_boarding_stop_name">공영차고지</string>
+    <string name="view_route_on_map">↻  지도에서 운행 경로 보기</string>
+    <string name="confirm_alighting_stop">이 정류장에서 내리기</string>
+    <string name="nearby_map_title">주변 정류장 지도</string>
+
+    <!-- 동적 표시 문자열 -->
+    <string name="bus_number_format">%1$s번</string>
+    <string name="route_title_format">%1$s번 운행 경로</string>
+    <string name="route_endpoints_format">%1$s → %2$s</string>
+    <string name="jinju_bus_stop_count_format">진주시 시내버스 · %1$d개 정류장</string>
+    <string name="route_load_failed_format">전체 노선 조회 실패: %1$s</string>
+    <string name="operating_buses_refresh_format">운행 중인 버스 %1$d대 · 60초마다 갱신</string>
+    <string name="bus_location_failed_format">버스 위치 조회 실패: %1$s</string>
+    <string name="stop_order_format">%1$d번째 정류장</string>
+    <string name="operating_buses_count_format">🚌 운행 중 %1$d대</string>
+    <string name="walking_distance_format">도보 %1$d분 · %2$dm</string>
+    <string name="stop_number_format">정류장 번호: %1$s</string>
+    <string name="stop_id_format">정류장 ID: %1$s</string>
+    <string name="distance_meters_format">현재 위치에서 약 %1$dm</string>
+    <string name="search_results_count_format">검색 결과 %1$d개</string>
+    <string name="search_failed_format">검색 실패: %1$s</string>
+    <string name="route_type_format">노선 유형: %1$s</string>
+    <string name="route_id_format">노선 ID: %1$s</string>
+    <string name="boarding_description_format">%1$s에서 승차한 뒤 내릴 정류장을 선택해 주세요.</string>
+    <string name="stop_load_failed_format">정류장 조회 실패\n%1$s</string>
+    <string name="boarding_value_format">●  승차  %1$s</string>
+    <string name="alighting_value_format">●  하차  %1$s</string>
+    <string name="route_summary_prompt_format">%1$s 승차 · 하차 정류장을 선택해 주세요.</string>
+    <string name="route_summary_format">%1$s 승차 · %2$s 하차</string>
+    <string name="not_selected">미선택</string>
+    <string name="bus_not_selected">버스 미선택</string>
+    <string name="route_id_missing">노선 ID가 없습니다.</string>
+    <string name="route_stops_loading">전체 노선 조회 중…</string>
+    <string name="route_stops_empty">조회된 노선 정보가 없습니다.</string>
+    <string name="bus_locations_loading">실시간 버스 위치 조회 중…</string>
+    <string name="route_origin">기점</string>
+    <string name="route_destination">종점</string>
+    <string name="currently_selected_stop">현재 선택한 정류장</string>
+
+    <!-- 화면 상태 및 안내 -->
+    <string name="select_route_from_home">홈 화면에서 정류장과 버스를 선택해 주세요.</string>
+    <string name="location_service_required">위치 서비스를 활성화해 주세요.</string>
+    <string name="location_permission_required">위치 권한이 필요합니다.</string>
+    <string name="location_permission_denied">위치 권한이 거부되었습니다.</string>
+    <string name="location_unavailable">위치 정보를 가져올 수 없습니다.</string>
+    <string name="my_location">내 위치</string>
+    <string name="checking_location">위치 확인 중…</string>
+    <string name="refresh_current_location">현재 위치 새로고침</string>
+    <string name="refreshing_current_location">GPS 위치를 새로 확인하는 중…</string>
+    <string name="test_location_format">%1$s (테스트 위치)</string>
+    <string name="test_location_address_failed">테스트 위치 (주소 조회 실패)</string>
+    <string name="address_lookup_failed">주소 조회 실패</string>
+    <string name="stop_query_failed_format">정류장 조회 실패: %1$s</string>
+    <string name="no_nearby_stops">주변 정류장이 없습니다.</string>
+    <string name="nearby_stops_searching">주변 정류장을 검색하고 있습니다.</string>
+    <string name="nearby_stops_found_format">%1$d개의 정류장을 찾았습니다.</string>
+    <string name="no_search_results">검색 결과가 없습니다.</string>
+    <string name="nearby_stop_count_format">주변 정류장 %1$d개</string>
+    <string name="direction_loading">방면 조회 중…</string>
+    <string name="direction_lookup_failed">방면 조회 실패</string>
+    <string name="distance_unavailable">거리 정보 없음</string>
+    <string name="stop_id_missing">정류장 ID가 없습니다.</string>
+    <string name="arrival_lookup_failed">도착정보 조회 실패</string>
+    <string name="no_upcoming_buses">현재 도착 예정 버스가 없습니다.</string>
+    <string name="select_bus_description_format">%1$s번 버스 선택</string>
+    <string name="remaining_stops_format">도착까지 %1$d개 정류장</string>
+    <string name="remaining_stops_unavailable">남은 정류장 정보 없음</string>
+    <string name="information_unavailable">정보 없음</string>
+    <string name="arriving_soon">곧 도착</string>
+    <string name="minutes_later_format">%1$d분 후</string>
+    <string name="select_bus_for_route">경로를 찾을 버스를 선택하세요.</string>
+    <string name="search_instruction">버스 번호 또는 정류장을 검색하세요</string>
+    <string name="search_preparing">검색 준비 중…</string>
+    <string name="searching">검색 중…</string>
+    <string name="stop_section_title">정류장</string>
+    <string name="bus_route_section_title">버스 노선</string>
+    <string name="bus_route_label">버스 노선</string>
+    <string name="stops_loading">정류장 정보를 불러오는 중…</string>
+    <string name="no_selectable_alighting_stops">선택할 수 있는 하차 정류장이 없습니다.</string>
+    <string name="select_alighting_prompt">하차 정류장을 선택하세요.</string>
+    <string name="tago_lookup_failed">TAGO API 조회 실패</string>
+    <string name="tmap_init_failed_format">TMAP 초기화 오류: %1$s</string>
+    <string name="boarding_stop_not_found">승차 정류장을 찾을 수 없습니다.</string>
+    <string name="boarding_stop_missing_in_route_format">%1$s번 노선에서 %2$s 정류장을 찾지 못했습니다.</string>
+    <string name="alighting_stop_not_found">하차 정류장을 찾을 수 없습니다.</string>
+    <string name="select_alighting_after_boarding">승차 정류장 이후의 하차 정류장을 선택하세요.</string>
+    <string name="route_coordinates_insufficient">선택한 구간의 좌표가 부족합니다.</string>
+    <string name="select_alighting_guide">하차 정류장을 선택해 주세요.</string>
+    <string name="profile_not_connected">내 정보 화면은 추후 연결됩니다.</string>
+    <string name="selected_alighting_stop_format">하차 정류장: %1$s</string>
+</resources>

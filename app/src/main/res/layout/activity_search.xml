@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- 뒤로가기 버튼과 검색 화면 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/symbol_back"
+            android:textColor="#202936"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bus_search_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#202936" />
+    </LinearLayout>
+
+    <!-- 버스 번호 또는 정류장 검색어 입력 -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="16dp"
+        android:background="#F1F3F5"
+        android:hint="@string/bus_search_hint"
+        android:importantForAutofill="no"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="15sp" />
+
+    <!-- 전체, 버스, 정류장 검색 범위 선택 -->
+    <RadioGroup
+        android:id="@+id/searchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_all"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_bus" />
+
+        <RadioButton
+            android:id="@+id/radioStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_stop" />
+    </RadioGroup>
+
+    <!-- 로딩, 오류, 검색 결과 상태 안내 -->
+    <TextView
+        android:id="@+id/tvSearchStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="@string/enter_search_term"
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <!-- Kotlin 코드에서 검색 결과 카드를 동적으로 추가하는 영역 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/searchResultContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp" />
+    </ScrollView>
+
+</LinearLayout>
