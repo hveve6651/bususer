@@ -94,6 +94,21 @@
 
     </ScrollView>
 
+    <TextView
+        android:id="@+id/btnRouteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/view_bus_route_detail"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_busstop_route"
+        android:clickable="true"
+        android:focusable="true" />
+
     <!-- 경로 찾기 버튼 -->
     <TextView
         android:id="@+id/btnFindRoute"

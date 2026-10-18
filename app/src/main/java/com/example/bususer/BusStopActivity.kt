@@ -263,6 +263,25 @@ class BusStopActivity : Activity() {
             BottomNavigation.navigateHome(this)
             finish()
         }
+        findViewById<View>(R.id.btnRouteDetail).setOnClickListener {
+            val bus = selectedBus
+            if (bus == null) {
+                showMessage(R.string.select_bus_for_route)
+                return@setOnClickListener
+            }
+            if (bus.routeId.isBlank()) {
+                showMessage(R.string.route_id_missing)
+                return@setOnClickListener
+            }
+            startActivity(
+                BusRouteActivity.createIntent(
+                    this,
+                    bus.routeId,
+                    bus.busNumber,
+                    stopId
+                )
+            )
+        }
         findViewById<View>(R.id.btnFindRoute).setOnClickListener {
             val bus = selectedBus
 

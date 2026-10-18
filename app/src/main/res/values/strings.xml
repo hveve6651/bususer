@@ -39,6 +39,7 @@
     <string name="sample_stop_name">중앙시장 정류장</string>
     <string name="sample_walking_distance">도보 3분 · 120m</string>
     <string name="bus_arrivals_loading">버스 도착 정보를 불러오는 중…</string>
+    <string name="view_bus_route_detail">노선 상세 보기</string>
     <string name="find_route_with_bus">이 버스로 경로 찾기</string>
 
     <!-- 경로 화면 -->
